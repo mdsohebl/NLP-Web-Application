@@ -5,7 +5,7 @@ import pandas as pd
 db = pymysql.connect(
     host="localhost",
     user="root",
-    password="1010",
+    password="****",
     database="nlp"
 )
 
