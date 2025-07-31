@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NlP register Page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+  <h1>NLP app</h1>
+  <h3>Ragister Here</h3>
+  {% if massage%}
+  <p style="color:red"> {{massage}}</p>
+  {% endif %}
+
+
+  <form action="/perform_registration" method="post">
+    <label>Name</label><br>
+    <input type="text" name="user_name" ><br>
+    <label>Email</label><br>
+    <input type="email" name="user_email"><br>
+    <label>Password</label><br>
+    <input type="password" name="user_pass"><br><br>
+    <input type="submit" value="Register">
+</form>
+  <p>Already a member|<a href="/">Login here </a></p>
+
+
+
+</body>
+</html>
